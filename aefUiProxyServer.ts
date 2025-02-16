@@ -41,7 +41,7 @@ app.use(ensureSecure);
 // app.use('/aefui', express.static(path.join(__dirname, 'aefui')));
 app.use('/images', express.static(path.join(__dirname, 'aefui/images')));
 app.use('/static', express.static(path.join(__dirname, 'aefui/static')));
-
+app.use('/assets', express.static(path.join(__dirname, 'aefui/assets')));
 // Handling '/' Request
 app.get('/', (_req, _res) => {
     _res.sendFile(path.join(__dirname, '/aefui/index.html'));
